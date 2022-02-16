@@ -10,7 +10,10 @@ public class Exercise {
             result += Math.pow(remainder, 3);
             originalNumber /= 10;
         }
-    return result;
+          if (result == number) {
+            System.out.println(number + " is not an Armstrong number.");
+        } else {
+            System.out.println(number + " is an Armstrong number.");
+        }
     }
-}
 
